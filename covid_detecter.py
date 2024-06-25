@@ -126,4 +126,5 @@ class covid_detecter:
 
 if __name__ == '__main__':
     myAI = covid_detecter()
-    print(myAI.__AI('cough.wav'))
+    print(myAI.detect_covid('cough.wav'))
+    print(myAI.detect_covid('not_cough.wav'))
